@@ -1,0 +1,50 @@
+[
+  {
+    "date": "2024-11-12",
+    "readingTime": "18 min read",
+    "discipline": ["Infrastructure"],
+    "geography": ["North America"],
+    "perspective": ["Systems"],
+    "title": "Waste Heat, Warm Cities",
+    "slug": "waste-heat-warm-cities",
+    "excerpt": "An examination of data center waste heat as infrastructure — exploring when heat reuse becomes viable, why it has scaled unevenly, and how policy, district heating, and cooling architectures shape outcomes.",
+    "image": "/reports/Volterra%20Reports%20-%20Waste%20Heat,%20Warm%20Cities_Page_01.png",
+    "pdfUrl": "/reports/Volterra%20Reports%20-%20Waste%20Heat,%20Warm%20Cities_Page_01.png"
+  },
+  {
+    "date": "2024-08-03",
+    "readingTime": "14 min read",
+    "discipline": ["Market"],
+    "geography": ["North America"],
+    "perspective": ["Demand"],
+    "title": "Water, Watts, & Workloads",
+    "slug": "water-watts-workloads",
+    "excerpt": "A study of how water constraints and power delivery shape capacity planning and market timing across major data center corridors.",
+    "image": "/reports/Volterra%20Reports%20-%20Water,%20Watts,%20%26%20Workloads_Page_01.png",
+    "pdfUrl": "/reports/Volterra%20Reports%20-%20Water,%20Watts,%20%26%20Workloads_Page_01.png"
+  },
+  {
+    "date": "2023-12-18",
+    "readingTime": "16 min read",
+    "discipline": ["Policy"],
+    "geography": ["United States"],
+    "perspective": ["Infrastructure"],
+    "title": "Legacy Fiber, Lasting Impact",
+    "slug": "legacy-fiber-lasting-impact",
+    "excerpt": "Tracing how legacy fiber routes and rights-of-way still shape site readiness and infrastructure clustering today.",
+    "image": "/reports/Legacy%20Fiber,%20Lasting%20Impact%20-%20a%20Volterra%20Report_Page_1.png",
+    "pdfUrl": "/reports/Legacy%20Fiber,%20Lasting%20Impact%20-%20a%20Volterra%20Report_Page_1.png"
+  },
+  {
+    "date": "2023-06-28",
+    "readingTime": "12 min read",
+    "discipline": ["Operations"],
+    "geography": ["Global"],
+    "perspective": ["Lifecycle"],
+    "title": "From the Curb to the Computer Room",
+    "slug": "from-the-curb-to-the-computer-room",
+    "excerpt": "A technical walkthrough of the power path from curbside delivery to data hall operations and how design choices affect efficiency over time.",
+    "image": "/reports/From%20the%20Curb%20to%20the%20Computer%20Room%20-%200.01_Page_01.png",
+    "pdfUrl": "/reports/From%20the%20Curb%20to%20the%20Computer%20Room%20-%200.01_Page_01.png"
+  }
+]
