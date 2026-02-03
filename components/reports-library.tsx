@@ -200,7 +200,7 @@ export function ReportsLibrary() {
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {filtered.map((report) => (
-            <ReportCard key={report.slug} report={report} />
+            <ReportCard key={`${report.title}-${report.date}`} report={report} />
           ))}
         </div>
       )}
