@@ -16,6 +16,7 @@ export interface ReportItem {
   excerpt: string;
   image: string;
   pdfUrl: string;
+  slug: string;
 }
 
 export function ReportCard({ report }: { report: ReportItem }) {

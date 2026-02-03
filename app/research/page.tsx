@@ -37,7 +37,7 @@ export default function ResearchPage() {
         <div className="container space-y-8">
           <SectionHeader title="Featured Report" withGradient />
           <Card className="grid gap-6 p-6 md:grid-cols-[0.7fr_1.3fr] md:items-center">
-            <div className="relative h-64 w-[200px] overflow-hidden rounded-md border border-slate-200 bg-white mx-auto md:mx-0 md:justify-self-start">
+            <div className="relative h-64 w-[200px] overflow-hidden rounded-lg border-2 border-slate-200 bg-white p-2 shadow-sm mx-auto md:mx-0 md:justify-self-start">
               <Image
                 src="/reports/Volterra%20Reports%20-%20Waste%20Heat,%20Warm%20Cities_Page_01.png"
                 alt="Waste Heat, Warm Cities"
@@ -98,7 +98,7 @@ export default function ResearchPage() {
                 }`}
               >
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
-                  <div className="relative h-64 w-[200px] overflow-hidden rounded-md border border-slate-200 bg-white mx-auto md:mx-0 md:justify-self-start">
+                  <div className="relative h-64 w-[200px] overflow-hidden rounded-lg border-2 border-slate-200 bg-white p-2 shadow-sm mx-auto md:mx-0 md:justify-self-start">
                     <Image src={item.image} alt={item.title} fill className="object-contain" />
                   </div>
                 </div>
