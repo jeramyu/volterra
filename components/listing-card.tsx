@@ -33,28 +33,27 @@ export function ListingCard({
 }) {
   const cardRef = useRef<HTMLDivElement | null>(null);
   const prefersReducedMotion = useReducedMotion();
-  const [isVisible, setIsVisible] = useState(prefersReducedMotion);
+  const [hasViewed, setHasViewed] = useState(false);
 
   useEffect(() => {
-    if (prefersReducedMotion) {
-      setIsVisible(true);
-      return;
-    }
+    if (prefersReducedMotion) return;
     const node = cardRef.current;
     if (!node) return;
     if (typeof IntersectionObserver === "undefined") {
-      setIsVisible(true);
-      return;
+      const fallbackTimer = window.setTimeout(() => {
+        setHasViewed(true);
+      }, 0);
+      return () => window.clearTimeout(fallbackTimer);
     }
 
     const fallbackTimer = window.setTimeout(() => {
-      setIsVisible(true);
+      setHasViewed(true);
     }, 800);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setHasViewed(true);
           observer.disconnect();
           window.clearTimeout(fallbackTimer);
         }
@@ -71,7 +70,7 @@ export function ListingCard({
 
   const visibilityClass = prefersReducedMotion
     ? "opacity-100"
-    : isVisible
+    : hasViewed
       ? "animate-fade-up"
       : "opacity-0";
 

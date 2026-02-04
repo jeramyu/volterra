@@ -206,7 +206,7 @@ export default function AboutPage() {
             start a conversation.
           </p>
           <Button asChild variant="default">
-            <a href="/#contact">Start the Conversation</a>
+            <Link href="/#contact">Start the Conversation</Link>
           </Button>
         </div>
       </section>

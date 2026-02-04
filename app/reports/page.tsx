@@ -35,7 +35,7 @@ export default function ReportsPage() {
             market or decision.
           </p>
           <Button asChild variant="default">
-            <a href="/#contact">Start the Conversation</a>
+            <Link href="/#contact">Start the Conversation</Link>
           </Button>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Briefcase, Bolt, LineChart, Layers } from "lucide-react";
 
 import { PageHeader, SectionHeader } from "@/components/page-header";
@@ -30,7 +31,7 @@ export default function SolutionsPage({
               withGradient
             />
             <Button asChild variant="default">
-              <a href="/#contact">Start the Conversation</a>
+              <Link href="/#contact">Start the Conversation</Link>
             </Button>
           </div>
           <div className="relative h-[320px] w-full overflow-hidden rounded-lg border border-slate-200 bg-white shadow-soft">

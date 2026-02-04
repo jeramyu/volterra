@@ -107,7 +107,7 @@ export default function ResearchPage() {
                   <p className="text-sm text-slate-700">{item.description}</p>
                   <p className="text-sm text-slate-700">{item.detail}</p>
                   <Button asChild variant="outline">
-                    <a href="/#contact">Subscribe</a>
+                    <Link href="/#contact">Subscribe</Link>
                   </Button>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export default function ResearchPage() {
             variant="default"
             className="bg-volterra-deep-green text-white hover:bg-volterra-deep-green/90"
           >
-            <a href="/#contact">Start the Conversation</a>
+            <Link href="/#contact">Start the Conversation</Link>
           </Button>
         </div>
       </section>

@@ -90,8 +90,10 @@ export function StatTile({
   useEffect(() => {
     if (!shouldAnimate || !ref.current) return;
     if (typeof IntersectionObserver === "undefined") {
-      setHasViewed(true);
-      return;
+      const fallbackTimer = window.setTimeout(() => {
+        setHasViewed(true);
+      }, 0);
+      return () => window.clearTimeout(fallbackTimer);
     }
 
     const fallbackTimer = window.setTimeout(() => {

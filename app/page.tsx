@@ -82,7 +82,7 @@ export default function HomePage({
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Button variant="default" asChild>
-                <a href="/#contact">Start the Conversation</a>
+                <Link href="/#contact">Start the Conversation</Link>
               </Button>
               <Link href="/solutions" className="text-sm font-semibold text-slate-700">
                 How We Can Help
